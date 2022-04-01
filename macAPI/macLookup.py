@@ -21,4 +21,5 @@ class MACs(Resource):
 api.add_resource(MACs, '/MACs')  # '/MACs' is our entry point
 
 if __name__ == '__main__':
-    app.run()  # run our Flask app
+    app.debug = True
+    app.run(host="0.0.0.0")  # run our Flask app
